@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="33214" started-at="2020-07-21T03:53:31Z" finished-at="2020-07-21T03:54:04Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="33214" started-at="2020-07-21T03:53:31Z" finished-at="2020-07-21T03:54:04Z">
+      <class name="com.qa.verizon.test.CartPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.verizon.test.CartPageTest@19bb089b]" name="setUp" is-config="true" duration-ms="32707" started-at="2020-07-20T23:53:31Z" finished-at="2020-07-20T23:54:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="getCartPageTitleTest()[pri:1, instance:com.qa.verizon.test.CartPageTest@19bb089b]" name="getCartPageTitleTest" duration-ms="203" started-at="2020-07-20T23:54:04Z" finished-at="2020-07-20T23:54:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getCartPageTitleTest -->
+        <test-method status="PASS" signature="verifyPhoneName()[pri:2, instance:com.qa.verizon.test.CartPageTest@19bb089b]" name="verifyPhoneName" duration-ms="42" started-at="2020-07-20T23:54:04Z" finished-at="2020-07-20T23:54:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPhoneName -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.verizon.test.CartPageTest@19bb089b]" name="tearDown" is-config="true" duration-ms="251" started-at="2020-07-20T23:54:04Z" finished-at="2020-07-20T23:54:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.verizon.test.CartPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
