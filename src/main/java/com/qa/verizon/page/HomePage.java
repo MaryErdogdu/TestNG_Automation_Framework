@@ -32,9 +32,9 @@ public class HomePage extends BasePage {
    }
 
    public SmartphonePage clickSmartPhone(){
-	  //elementUtil.waitForElementPresent(phone);
+	  
 	   elementUtil.moveToElement(phone);
-	  //elementUtil.waitForElementPresent(smartphone);
+	 
 	   elementUtil.doClick(smartphone);
 	   
 	   return new SmartphonePage(driver);

@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 import com.qa.verizon.base.BasePage;
 import com.qa.verizon.util.Constants;
 import com.qa.verizon.util.ElementUtil;
-import com.sun.corba.se.impl.orbutil.closure.Constant;
+
 
 public class FeaturesPage extends BasePage {
 
@@ -37,16 +37,15 @@ public class FeaturesPage extends BasePage {
 	
 	public String getFeaturePageTitle(){
      return elementUtil.waitForGetPageTitle(Constants.FEATUREPAGE_PAGE_TITLE);
-		//return elementUtil.doGetPageTitle();
+		
 	}
 	
 	public CartPage selectFeatures(String zip){
-		//elementUtil.waitForElementPresent(color);
+	
 		elementUtil.doClick(color);
 		elementUtil.doClick(size);
 		elementUtil.doClick(paymentOptions);
 		elementUtil.doClick(clickContinue);
-		//elementUtil.waitForElementPresent(zipcode);
 		elementUtil.doSendKeys(zipcode, zip);
 		elementUtil.doClick(confirmLocation);
 		elementUtil.doClick(newCustomer);

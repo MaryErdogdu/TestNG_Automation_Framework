@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import com.qa.verizon.base.BasePage;
-import com.qa.verizon.test.FeaturesPageTest;
+
 import com.qa.verizon.util.Constants;
 import com.qa.verizon.util.ElementUtil;
 

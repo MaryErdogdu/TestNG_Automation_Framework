@@ -199,6 +199,12 @@ public class ElementUtil extends BasePage {
 		    Actions actions= new Actions(driver);
 		    actions.moveToElement(element).build().perform();
 		}
+		
+		public static void moveToElement(WebDriver driver, By locator){
+			WebElement element=driver.findElement(locator);
+		    Actions action= new Actions(driver);
+		    action.moveToElement(element).build().perform();
+		}
 
 
 }

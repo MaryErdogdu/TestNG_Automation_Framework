@@ -1,34 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+<testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="5463" started-at="2020-07-27T01:04:54 EDT" finished-at="2020-07-27T01:05:00 EDT">
+  <suite name="Default suite" duration-ms="108197" started-at="2020-08-04T13:58:10 EDT" finished-at="2020-08-04T13:59:58 EDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="5463" started-at="2020-07-27T01:04:54 EDT" finished-at="2020-07-27T01:05:00 EDT">
+    <test name="Default test" duration-ms="108197" started-at="2020-08-04T13:58:10 EDT" finished-at="2020-08-04T13:59:58 EDT">
       <class name="com.qa.verizon.test.HomePageTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.verizon.test.HomePageTest@131276c2]" name="setUp" is-config="true" duration-ms="2792" started-at="2020-07-27T01:04:54 EDT" finished-at="2020-07-27T01:04:57 EDT">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.verizon.test.HomePageTest@131276c2]" name="setUp" is-config="true" duration-ms="3476" started-at="2020-08-04T13:58:10 EDT" finished-at="2020-08-04T13:58:13 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyHomePageTitleTest()[pri:1, instance:com.qa.verizon.test.HomePageTest@131276c2]" name="verifyHomePageTitleTest" duration-ms="262" started-at="2020-07-27T01:04:57 EDT" finished-at="2020-07-27T01:04:57 EDT">
+        <test-method status="FAIL" signature="verifyHomePageTitleTest()[pri:1, instance:com.qa.verizon.test.HomePageTest@131276c2]" name="verifyHomePageTitleTest" duration-ms="90516" started-at="2020-08-04T13:58:13 EDT" finished-at="2020-08-04T13:59:44 EDT">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for title to be "Verizon Wireless, Smartphone Deals & Plans | First to 5G". Current title: "Verizon: Wireless, Internet, TV and Phone Services | Official Site" (tried for 90 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Marys-MBP', ip: 'fe80:0:0:0:ccb:599c:63e0:37e5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.5', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: /var/folders/47/ltq4zrx91nq...}, goog:chromeOptions: {debuggerAddress: localhost:54754}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 25ec85d2a5787c9a8128fde9f48cb138]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to be "Verizon Wireless, Smartphone Deals & Plans | First to 5G". Current title: "Verizon: Wireless, Internet, TV and Phone Services | Official Site" (tried for 90 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Marys-MBP', ip: 'fe80:0:0:0:ccb:599c:63e0:37e5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.5', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.105, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: /var/folders/47/ltq4zrx91nq...}, goog:chromeOptions: {debuggerAddress: localhost:54754}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 25ec85d2a5787c9a8128fde9f48cb138
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at com.qa.verizon.util.ElementUtil.waitForTitlePresent(ElementUtil.java:38)
+at com.qa.verizon.page.HomePage.getHomeTitle(HomePage.java:29)
+at com.qa.verizon.test.HomePageTest.verifyHomePageTitleTest(HomePageTest.java:43)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:821)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(ArrayList.java:1257)
+at org.testng.TestRunner.privateRun(TestRunner.java:767)
+at org.testng.TestRunner.run(TestRunner.java:588)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1214)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1136)
+at org.testng.TestNG.runSuites(TestNG.java:1066)
+at org.testng.TestNG.run(TestNG.java:1034)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHomePageTitleTest -->
-        <test-method status="FAIL" signature="clickSmartPhoneTest()[pri:2, instance:com.qa.verizon.test.HomePageTest@131276c2]" name="clickSmartPhoneTest" duration-ms="2283" started-at="2020-07-27T01:04:57 EDT" finished-at="2020-07-27T01:05:00 EDT">
+        <test-method status="FAIL" signature="clickSmartPhoneTest()[pri:2, instance:com.qa.verizon.test.HomePageTest@131276c2]" name="clickSmartPhoneTest" duration-ms="14060" started-at="2020-08-04T13:59:44 EDT" finished-at="2020-08-04T13:59:58 EDT">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[Cannot locate an element using xpath=//button[contains(text(),'Phones list')]
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Marys-MBP', ip: 'fe80:0:0:0:1400:aba0:417:ecd3%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.5', java.version: '1.8.0_241'
+System info: host: 'Marys-MBP', ip: 'fe80:0:0:0:ccb:599c:63e0:37e5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.5', java.version: '1.8.0_241'
 Driver info: driver.version: RemoteWebDriver]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate an element using xpath=//button[contains(text(),'Phones list')]
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'Marys-MBP', ip: 'fe80:0:0:0:1400:aba0:417:ecd3%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.5', java.version: '1.8.0_241'
+System info: host: 'Marys-MBP', ip: 'fe80:0:0:0:ccb:599c:63e0:37e5%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.5', java.version: '1.8.0_241'
 Driver info: driver.version: RemoteWebDriver
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
 at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
@@ -71,7 +123,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickSmartPhoneTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.verizon.test.HomePageTest@131276c2]" name="tearDown" is-config="true" duration-ms="94" started-at="2020-07-27T01:05:00 EDT" finished-at="2020-07-27T01:05:00 EDT">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.verizon.test.HomePageTest@131276c2]" name="tearDown" is-config="true" duration-ms="107" started-at="2020-08-04T13:59:58 EDT" finished-at="2020-08-04T13:59:58 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

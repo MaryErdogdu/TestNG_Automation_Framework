@@ -55,21 +55,9 @@ public class BasePage {
 	
 	public Properties init_properties(){
 		prop = new Properties();
-//		String path = null;
-//		String env = null;
+
 		String path = "/Users/mary/Documents/workspace/Verizon_POM/src/main/java/com/qa/verizon/config/config.properties";
-//				//+"src/main/java/com/qa/hubspot/config/config.properties"; yeni configten sonra bunu kapatip ustekini yaptik
-//		
-//		try {                       // bunuda pathve env yaptiktan sonra yaprik
-//			env = System.getProperty("env");
-//			if(env.equals("qa")){
-//				path="./src/main/java/com/qa/hubspot/config/config.qa.properties";
-//			}else if (env.equals("stq")) {
-//				path ="./src/main/java/com/qa/hubspot/config/config.stg.properties";
-//			}
-//		} catch (Exception e) {
-//			path ="./src/main/java/com/qa/hubspot/config/config.properties";
-//		}
+				
 		
 		
 		try {
